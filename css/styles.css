@@ -1,3 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+.contenedor .contenedor-1 {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+}
+.contenedor .contenedor-1 .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-family: "Inspiration", cursive;
+  font-size: 25px;
+  background: linear-gradient(to bottom right, rgb(30, 30, 30), rgb(248, 12, 12));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contenedor .contenedor-1 .contenedor-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.contenedor .contenedor-1 .contenedor-2 .navbar {
+  display: flex;
+}
+.contenedor .contenedor-1 .contenedor-2 .navbar .navbar-1 {
+  display: flex;
+}
+.contenedor .contenedor-1 .contenedor-2 .navbar .navbar-1 a {
+  display: block;
+  color: #363936;
+  padding: 0px 20px;
+  font-size: 19px;
+}
+.contenedor .contenedor-1 .contenedor-2 .navbar .navbar-1 a:hover {
+  background: linear-gradient(to bottom right, rgb(30, 30, 30), rgb(248, 12, 12));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contenedor .contenedor-1 .redes {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+.contenedor .contenedor-1 .redes i {
+  padding: 14px;
+}
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
 
 /*# sourceMappingURL=styles.css.map */

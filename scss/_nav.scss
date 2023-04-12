@@ -1,0 +1,54 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    .contenedor-1{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+        .titulo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            font-family: $titulo;
+            font-size: $h1;
+            background: $h1gradiant;
+            -webkit-background-clip: text;  
+            -webkit-text-fill-color: transparent;
+        }
+        .contenedor-2{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 50%;
+            .navbar{
+                display: flex;
+                .navbar-1 {
+                    display: flex;
+                    a{
+                        display: block;
+                        color: $color;
+                        padding: 0px 20px;
+                        font-size: $fontBar;
+                        &:hover{
+                            background: $h1gradiant;
+                            -webkit-background-clip: text;  
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+        .redes{
+            display: flex;
+            justify-content: center;
+            width: 20%;
+            i{
+                padding: 14px;
+            }
+        }
+    }
+}
