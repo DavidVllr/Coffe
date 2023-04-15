@@ -1,13 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
 .contenedor {
   display: flex;
+  position: absolute;
   align-items: center;
   justify-content: center;
-  height: 60px;
+  width: 100%;
+  height: 100px;
+  z-index: 10;
 }
 .contenedor .contenedor-1 {
   display: flex;
-  position: fixed;
+  position: absolute;
   width: 100%;
   justify-content: space-between;
 }
@@ -15,10 +28,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 30%;
   font-family: "Inspiration", cursive;
-  font-size: 25px;
-  background: linear-gradient(to bottom right, rgb(30, 30, 30), rgb(248, 12, 12));
+  font-size: 27px;
+  background: linear-gradient(to bottom right, rgb(213, 121, 121), rgb(62, 60, 60));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -26,22 +39,25 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 50%;
+  width: 60%;
 }
 .contenedor .contenedor-1 .contenedor-2 .navbar {
-  display: flex;
+  display: block;
 }
 .contenedor .contenedor-1 .contenedor-2 .navbar .navbar-1 {
   display: flex;
 }
 .contenedor .contenedor-1 .contenedor-2 .navbar .navbar-1 a {
   display: block;
-  color: #363936;
+  color: #ffffff;
   padding: 0px 20px;
   font-size: 19px;
+  opacity: 0.9;
+  transition: 0.5s;
 }
 .contenedor .contenedor-1 .contenedor-2 .navbar .navbar-1 a:hover {
-  background: linear-gradient(to bottom right, rgb(30, 30, 30), rgb(248, 12, 12));
+  opacity: 1;
+  background: linear-gradient(to bottom right, rgb(213, 121, 121), rgb(62, 60, 60));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -50,16 +66,53 @@
   justify-content: center;
   width: 20%;
 }
-.contenedor .contenedor-1 .redes i {
+.contenedor .contenedor-1 .redes a {
+  font-size: 19px;
   padding: 14px;
+  color: #ffffff;
+}
+.contenedor .contenedor-1 .redes a:hover {
+  background: linear-gradient(to bottom right, rgb(213, 121, 121), rgb(62, 60, 60));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+.main-1 {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.main-1 .main-2 {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../multimedia/inicio/cafe-3.avif);
+}
+.main-1 .main-2 .main-3 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-top: 110px;
+  width: 100%;
+  height: auto;
+}
+.main-1 .main-2 .main-3 .main-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  width: 40%;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+.main-1 .main-2 .main-3 .main-4 h2 {
+  font-size: 40px;
+  color: #ffffff;
+  padding-bottom: 20px;
+  font-family: "Inconsolata", monospace;
 }
 
 /*# sourceMappingURL=styles.css.map */
