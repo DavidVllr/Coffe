@@ -32,14 +32,11 @@
                 .navbar-1 {
                     display: flex;
                     a{
-                        display: block;
+                        display: flex;
                         color: $color;
                         padding: 0px 20px;
                         font-size: $fontBar;
-                        opacity: 0.9;
-                        transition: 0.5s;
                         &:hover{
-                            opacity: 1;
                             background: $h1gradiant;
                             -webkit-background-clip: text;  
                             -webkit-text-fill-color: transparent;
