@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap");
+.nav-1 {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+}
+.nav-1 .nav-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  font-size: 23px;
+}
+.nav-1 .nav-2 h1 {
+  color: white;
+  font-family: "Calligraffitti";
+}
+.nav-1 .nav-2 ul {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+.nav-1 .nav-2 ul a {
+  color: white;
+  transition: 0.5s;
+}
+.nav-1 .nav-2 ul a:hover {
+  color: #c45222;
+}
+.nav-1 .nav-2 ul a i {
+  transition: 0.5s;
+}
+.nav-1 .nav-2 ul a i:hover {
+  color: #c45222;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Arbutus Slab", serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(180deg, rgba(244, 241, 241, 0) 76%, rgb(255, 255, 255) 98%), url(../mulimedia/inicio/background/bg-1.jpg);
+}
+.main-1 .main-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 60%;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.main-8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 15em 0;
+}
+.main-8 .main-8-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.main-8 .main-8-1 .main-9 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: auto;
+  width: 60%;
+}
+.main-8 img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.main-10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+.main-10 .main-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+}
+.main-10 .main-4 .main-5 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  color: white;
+}
+.main-10 .main-4 .main-5 .main-6 {
+  width: 50%;
+  font-size: 17px;
+}
+.main-10 .main-4 .main-5 .main-7 {
+  width: 50%;
+  font-size: 20px;
+}
+.main-10 .main-11 {
+  display: flex;
+  width: 90%;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+.main-10 .main-11 .caja {
+  color: white;
+  font-size: 15px;
+}
+.main-10 .main-11 .caja img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.main-10 .main-11 .caja .caja1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.main-10 .main-11 .caja .caja1 .separador {
+  margin: 10px;
+  border: 1px solid #c45222;
+  width: 80%;
+  height: auto;
+}
+.main-10 .main-11 .caja .caja1 button {
+  padding: 11px 32px;
+  border: solid 1px #000000;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 1px;
+  font: 17px "MS Serif", "New York", serif;
+  font-weight: bold;
+  color: #fffcfa;
+  background: #000000;
+  -webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  -moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  -webkit-transition: all 0.26s ease-in-out;
+  -moz-transition: all 0.26s ease-in-out;
+  -o-transition: all 0.26s ease-in-out;
+  transition: all 0.26s ease-in-out;
+}
+.main-10 .main-11 .caja .caja1 button:hover {
+  padding: 11px 32px;
+  border: solid 1px #c45222;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font: 17px "MS Serif", "New York", serif;
+  font-weight: bold;
+  color: #e5ffff;
+  background-color: #000000;
+  background-image: -moz-linear-gradient(top, #000000 0%, #c45222 100%);
+  background-image: -webkit-linear-gradient(top, #000000 0%, #c45222 100%);
+  background-image: -o-linear-gradient(top, #000000 0%, #c45222 100%);
+  background-image: -ms-linear-gradient(top, #000000 0%, #c45222 100%);
+  background-image: linear-gradient(top, #000000 0%, #c45222 100%);
+  -webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  -moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap');
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Arbutus Slab', serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
