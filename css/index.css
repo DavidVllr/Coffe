@@ -151,6 +151,7 @@ html {
   width: 250px;
   height: 250px;
   object-fit: cover;
+  border-radius: 20px;
 }
 .main-10 .main-11 .caja .caja1 {
   display: flex;
