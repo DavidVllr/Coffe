@@ -1,19 +1,44 @@
-alert('Bienvenido a coffeDv');
-let nombreUsuario = prompt('Ingresar nombre de usuario');
-
-if (nombreUsuario.trim() == ''){
-    console.warn('no ingresaste nombre de usuario🤔');
-}else{
-    console.log = alert('Te damos la bienvenid@ ' + nombreUsuario);
- }; //el bloque solo pide tu nombre y te da la bienvenida. si no se cumple se mostrara en la consola
 
 
-const iva = 1.21;
 
-function calcularPrecios(caffe, meses, neto){
-    console.log('precio total con inpuestos')
-    let precioFinal = (caffe * neto) / meses
-    for (let i = 0; i < meses; i++) {
-        console.log ('cuotas ' + (i + 1) + ' AR$' + precioFinal)
-    }
-} // copiar y pegar: calcularPrecios(567, 12, iva)  puedes cambiar precio y meses si se desea :D
+const caffLargo = 745
+const caffMocca = 626 
+const caffCarajillo = 562
+const caffAmericano = 522
+const caffExpresso = 165 
+const caffCortado = 134
+
+let dineroDis = parseFloat(prompt( 'cuanto dinero deseas gastar en un cafe?')) 
+if (dineroDis >= caffLargo){
+    alert ('puedes comprarte un caffe largo que vale: ' + caffLargo + ' pesos')
+    alert ('puedes comprarte un caffe moca que vale: ' + caffMocca + ' pesos')
+    alert ('puedes comprarte un caffe carajillo que vale: ' + caffCarajillo + ' pesos')
+    alert ('puedes comprarte un caffe americano que vale: ' + caffAmericano + ' pesos')
+    alert ('puedes comprarte un caffe expreso que vale: ' + caffExpresso + ' pesos')
+    alert ('puedes comprarte un caffe cortado que vale: ' + caffCortado + ' pesos')
+} else if (dineroDis >= caffMocca) {
+    alert ('puedes comprarte un caffe moca que vale: ' + caffMocca + ' pesos')
+    alert ('puedes comprarte un caffe carajillo que vale: ' + caffCarajillo + ' pesos')
+    alert ('puedes comprarte un caffe americano que vale: ' + caffAmericano + ' pesos')
+    alert ('puedes comprarte un caffe expreso que vale: ' + caffExpresso + ' pesos')
+    alert ('puedes comprarte un caffe cortado que vale: ' + caffCortado + ' pesos')
+} else if (dineroDis >= caffCarajillo) {
+    alert ('puedes comprarte un caffe carajillo que vale: ' + caffCarajillo + ' pesos')
+    alert ('puedes comprarte un caffe americano que vale: ' + caffAmericano + ' pesos')
+    alert ('puedes comprarte un caffe expreso que vale: ' + caffExpresso + ' pesos')
+    alert ('puedes comprarte un caffe cortado que vale: ' + caffCortado + ' pesos')
+} else if (dineroDis >= caffAmericano) {
+    alert ('puedes comprarte un caffe americano que vale: ' + caffAmericano + ' pesos')
+    alert ('puedes comprarte un caffe expreso que vale: ' + caffExpresso + ' pesos')
+    alert ('puedes comprarte un caffe cortado que vale: ' + caffCortado + ' pesos')
+} else if (dineroDis >= caffExpresso) {
+    alert ('puedes comprarte un caffe expreso que vale: ' + caffExpresso + ' pesos')
+    alert ('puedes comprarte un caffe cortado que vale: ' + caffCortado + ' pesos')
+} else if (dineroDis >= caffCortado) {
+    alert ('puedes comprarte un caffe cortado que vale: ' + caffCortado + ' pesos')
+}
+else {
+    alert('tienes poco dinero, no te alcanza para nada 😂')
+}
+
+
