@@ -1,12 +1,16 @@
-
+function darBienvenida() {
+    let nombre = prompt('por favor, introduce tu nombre:')
+    alert('Bienvenido/a ' + nombre + ', Disfruta de coffeDv!🙌')
+}
+darBienvenida()
 
 
 const caffLargo = 745
 const caffMocca = 626 
 const caffCarajillo = 562
-const caffAmericano = 522
-const caffExpresso = 165 
-const caffCortado = 134
+const caffAmericano = 422
+const caffExpresso = 365 
+const caffCortado = 234
 
 let dineroDis = parseFloat(prompt( 'cuanto dinero deseas gastar en un cafe?')) 
 if (dineroDis >= caffLargo){
@@ -42,3 +46,16 @@ else {
 }
 
 
+let respuesta = ''
+while(respuesta !== 'salir') {
+    respuesta = prompt('Que tal le parecio nuestros precios? Escribe: bien/regular/mal segun tu experiencia👏 para finalizar pon: salir')
+    if (respuesta === 'bien') {
+        alert('Nos alegra mucho saber que te ha gustado 🐱‍🏍')
+    } else if (respuesta === 'regular') {
+        alert('tomaremos en cuenta tu comentario para seguir mejorando nuestro sitio ✔')
+    } else if (respuesta === 'mal') {
+        alert('lo sentimos mucho 😢 por cualquier inconveniente que hayas experimentado por favor dejalo en el apartado de contactos!')
+    } else if (respuesta !== 'salir') {
+        alert('no hemos entendido tu respusta. Por favor escribe bien/regular/mal para recibir una respuesta adecuada :D')
+    }
+}
