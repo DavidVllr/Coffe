@@ -1,35 +1,31 @@
-.nav-1{
-    display: flex;
-    position: fixed;
-    width: 100%;
-    height: 10vh;
-    background-color: black;
-    .nav-2{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
-        height: auto;
-        align-items: center;
-        font-size: 23px;
-        h1{
-            color: white;
-            font-family: 'Calligraffitti';
+.navbar{
+    .container-fluid{
+        .navbar-brand{
+            font-size: 30px;
+            font-family: 'Noto Serif', serif;
+            background: radial-gradient(circle, #B8860B 0%, #DEB887 36%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        ul{
-            display: flex;
-            gap: 20px;
-            font-size: 20px;
-            a{
-                color: white;
-                transition: 0.5s;
-                &:hover{
-                    color: #c45222;
+        .navbar-toggler{
+            border: 2px solid #B8860B;
+        }
+        .offcanvas{
+            .offcanvas-header{
+                .offcanvas-title{
+                    font-size: 30px;
+                    background: radial-gradient(circle, #B8860B 0%, #DEB887 36%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
-                i{
-                    transition: 0.5s;
-                    &:hover{
-                        color: #c45222;
+            }
+            .offcanvas-body{
+                form{
+                    .btn-success{
+                        border: #FFE4C4;
+                        background-color: #DEB887;
                     }
                 }
             }
