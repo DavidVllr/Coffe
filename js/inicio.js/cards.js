@@ -1,13 +1,54 @@
 const mainCards = document.getElementById('main')
 const carritoLogo = document.querySelector('i#carrito-id.fa-solid')
+const numeroCarro = document.getElementById('numero-carrito')
+const misBotones = document.querySelectorAll('button.compra-btn')
+const buttonSearch = document.querySelector('button#myButtonProducto.btn.btn-outline-success')
 
+function miArrayDeProductos(){
+    mainCards.innerHTML = ''
+    productos.forEach((producto) => {
+        mainCards.innerHTML += copiarCards(producto)
+    })
+    clickButton()
+    
+}
+miArrayDeProductos(productos)
+
+function clickButton(){
+    const misBotones = document.querySelectorAll('button.compra-btn')
+    for(let boton of misBotones){
+        boton.addEventListener('click', (e) => {
+            cafeSeleccionado = productos.find((producto) => producto.id === parseInt(e.target.id))
+            miCarrito.push (cafeSeleccionado)
+        })
+        
+    }
+
+}
+
+
+let resultado = 0
+function sumarNumeroCarro(){
+    const misBotones = document.querySelectorAll('button.compra-btn')
+    for(let boton of misBotones){
+        boton.addEventListener('click', () => {
+            resultado++
+            numeroCarro.textContent = resultado
+        })
+    }
+}
+sumarNumeroCarro()
 
 carritoLogo.addEventListener('click', ()=>{
     location.href = 'carrito.html'
 })
 carritoLogo.addEventListener('mousemove', ()=>{
     carritoLogo.title = 'ir al carrito'
-})
+}) 
+
+
+
+
 
 function copiarCards(producto){
     return  `<ul class="cards">
@@ -28,38 +69,4 @@ function copiarCards(producto){
                     </div>
                 </li>
             </ul> `
-}
-
-function miArrayDeProductos(){
-    main.innerHTML = ''
-    productos.forEach((producto) => {
-        main.innerHTML += copiarCards(producto)
-    })
-    clickButton()
-}
-miArrayDeProductos()
-
-function clickButton(){
-    const misBotones = document.querySelectorAll('button.compra-btn')
-    for(let btn of misBotones){
-        btn.addEventListener('click', (e) =>{
-            const caffeElegido = productos.find((producto) => producto.id === parseInt(e.target.id))
-            carrito.push(caffeElegido)
-            localStorage.setItem('miCarrito', JSON.stringify(carrito))
-        })
-    }
-}
-
-function mostrarProductos() { 
-    let contenidoTablaHTML = ''
-    const tabla = document.querySelector('tbody')
-        tabla.innerHTML = ''
-        for (let producto of productos) {
-            contenidoTablaHTML += `<tr>
-                                       <td>${producto.categoria}</td>
-                                       <td>${producto.cafe}</td>
-                                       <td>$ ${producto.precio}</td>
-                                   <tr>`
-        }
-        tabla.innerHTML = contenidoTablaHTML || ''
 }

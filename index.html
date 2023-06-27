@@ -12,9 +12,11 @@
     <script src="https://kit.fontawesome.com/7010528a76.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
-    <script defer src="js/cards.js"></script>
-    <script defer src="js/Storage-JSON.js"></script>
-    <script src="js/Arrays.js"></script>
+    <script  src="js/Arrays.js"></script>
+    <script defer  src="js/inicio.js/cards.js"></script>
+    <script defer src="js/inicio.js/Storage-JSON.js"></script>
+
+
 </head>
 <body>
     <header>
@@ -40,7 +42,7 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" id="filtro-mayor" href="#">Mayor Precio</a></li>
-                    <li><a class="dropdown-item" id="filtro-menor" href="#">Menor Precio</a></li>
+                    <li><a class="dropdown-item" id="filtro-menor" href="#">Menor Precio</a></li> 
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -67,9 +69,10 @@
       <div class="carrito" id="carrito">
         <ul>
           <li><i class="fa-solid fa-cart-shopping" id="carrito-id"></i></li>
+          <span id="numero-carrito">0</span>
         </ul>
       </div>
-        <div class="main" id="main">
+        <div class="main" id="main"> <!-- este es el id de mis cards -->
         </div>
     </main>
 

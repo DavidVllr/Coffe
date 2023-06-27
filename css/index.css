@@ -54,6 +54,7 @@ body {
   margin: 0;
   font-size: 30px;
   color: #c89b3f;
+  padding: 0 15px;
 }
 .carrito ul li i{
   cursor: pointer;
@@ -291,7 +292,29 @@ th, td {
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
-
 tr:hover td {
   background-color: white;
+}
+.myTotal{
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  padding-right: 4rem;
+}
+.myTotal h3{
+  padding: 10px;
+}
+.finCompra{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+}
+.finCompra button{
+  border: 2px rgb(199, 130, 40);
+  border-radius: 20px;
+  padding: 4px;
+  background-color: #c89b3f;
+  color: white;
 }
