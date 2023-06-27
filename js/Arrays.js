@@ -1,8 +1,4 @@
-const miCarrito = [{id:8, categoria: 'masas', cafe: 'Croissants con mermelada', precio: 321, imagenes:'<img src="./mulimedia/inicio/masas-img/masa-4.jpg">'},
-                    {id:9, categoria: 'coffe', cafe: 'Cafe macchiato', precio: 700, imagenes:'<img src="./mulimedia/inicio/caffe-img/Café-Americano.jpg">'},
-                    {id:10, categoria: 'masas', cafe: 'Medialunas con dulce de leche ', precio: 413, imagenes:'<img src="./mulimedia/inicio/masas-img/masa-5.jpg">'},
-                    {id:11, categoria: 'coffe', cafe: 'Cafe americano', precio: 600, imagenes:'<img src="./mulimedia/inicio/caffe-img/cafe-macchiato.avif">'},
-                    {id:12, categoria: 'masas', cafe: 'Facturas', precio: 513, imagenes:'<img src="./mulimedia/inicio/masas-img/masa-6.jpg">'}]
+const miCarrito = []
 
                     
 const productos =  [{id:1, categoria: 'coffe', cafe:'Cafe capuchino', precio: 400, imagenes:'<img src="./mulimedia/inicio/caffe-img/Cafe-Capuchino.jpg">'},
