@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
 * {
   padding: 0;
   color: black;
@@ -22,44 +23,10 @@ body {
   --cornerRad: 4px;
 }
 
-/* inicio nav */
 
-/* fin nav */
-
-.navbar-brand{
-  font-size: 30px;
-}
-
-
-.btn{
-  color: #c89b3f;
-  border-color: #c89b3f;
-}
-.btn:hover{
-  background-color: #c89b3f;
-  border-color: #c89b3f;
-}
 /*inicio main */
 
-.carrito{
-  display: flex;
-  position: fixed;
-  width: auto;
-  height: auto;
-  top: 5rem;
-}
-.carrito ul{
-  display: flex;
-  width: 100%;
-  margin: 0;
-  font-size: 30px;
-  color: #c89b3f;
-  padding: 0 15px;
-}
-.carrito ul li i{
-  cursor: pointer;
-  color: #c89b3f;
-}
+
 .main {
   display: flex;
   justify-content: center;
@@ -194,8 +161,6 @@ body {
   }
 }
 
-
-
 /* fin main */
 
 /* inicio footer */
@@ -276,45 +241,99 @@ body {
 
 /* fin footer */
 
-/* carrtito HTML */
-section{
+/* carrito */
+
+.carrito{
   display: flex;
+  position: fixed;
+  width: 50%;
+  height: auto;
+  top: 5rem;
+  z-index: 1;
+}
+.carrito ul{
+  display: flex;
+  width: 100%;
+  margin: 0;
+  font-size: 30px;
+  color: #c89b3f;
+  padding: 0 15px;
+}
+.carrito ul li i{
+  cursor: pointer;
+  color: #c89b3f;
+}
+.container-icon{
+  position: relative;
+}
+.count-products{
+  position: absolute;
+  top: 55%;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
-  margin-top: 6rem;
-  width: 100%;
+  border-radius: 50%;
 }
-table{
-  width: 100%;
+#contador-productos{
+  font-size: 12px;
 }
-th, td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-tr:hover td {
-  background-color: white;
-}
-.myTotal{
-  display: flex;
-  width: 100%;
-  justify-content: end;
-  padding-right: 4rem;
-}
-.myTotal h3{
-  padding: 10px;
-}
-.finCompra{
-  display: flex;
+.misProductos{
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  z-index: 10;
+  top: 8rem;
   gap: 20px;
-  width: 100%;
-  justify-content: center;
+  left: 10px;
+  background-color: #f8f6f6e1;
   padding: 20px;
+  height: auto;
 }
-.finCompra button{
-  border: 2px rgb(199, 130, 40);
-  border-radius: 20px;
-  padding: 4px;
-  background-color: #c89b3f;
-  color: white;
+.misProductos nav{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.misProductos nav ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+.misBtn{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.misBtn p{
+  margin: 0;
+}
+
+.btn{
+font-family: 'Lato';
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #c89b3f;
+padding: 6px 16px;
+border: 2px solid #c89b3f;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 20px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+text-transform: uppercase;
+}
+
+.btn:hover{
+background-color: #fff;
+color: #c89b3f;
+border: solid 2px #c89b3f;
 }

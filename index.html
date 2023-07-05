@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/7010528a76.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
-    <script  src="js/Arrays.js"></script>
-    <script defer  src="js/inicio.js/cards.js"></script>
-    <script defer src="js/inicio.js/Storage-JSON.js"></script>
+        <script defer src="js/variables.js"></script>
+    <script  src="js/array.js"></script>
+
+    <script defer src="js/funciones.js"></script>
+    
 </head>
 
 
@@ -55,22 +56,30 @@
                   </ul>
                 </li>
               </ul>
-              <form class="d-flex mt-3" role="search">
-                <input id="inputProducto" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button id="myButtonProducto" class="btn btn-outline-success" type="submit">Buscar</button>
-              </form>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    
     <main>
       <div class="carrito" id="carrito">
         <ul>
           <li><i class="fa-solid fa-cart-shopping" id="carrito-id"></i></li>
           <span id="numero-carrito">0</span>
         </ul>
+      </div>
+      <div class="misProductos" id="elProducto">
+        <nav>
+          <ul>
+            <li>Producto</li>
+            <li>Precio</li>
+          </ul>
+          <div class="misBtn">
+            <button class="btn">Vaciar</button>
+            <button class="btn">Comprar</button>
+            <p>Total:</p><span>0</span>
+          </div>
+        </nav>
       </div>
         <div class="main" id="main"> <!-- este es el id de mis cards -->
         </div>
@@ -83,7 +92,7 @@
                     <div class="col-sm-4 col-md-3 item">
                         <h3>Services</h3>
                         <ul>
-                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Web design</a></li> 
                             <li><a href="#">Development</a></li>
                             <li><a href="#">Hosting</a></li>
                         </ul>
