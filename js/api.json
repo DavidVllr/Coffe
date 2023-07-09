@@ -1,0 +1,86 @@
+[
+    {
+        "title": "Cafe capuchino",
+        "id": 1,
+        "categoria": "coffe",
+        "precio": 400,
+        "thumbnailUrl": "./multimedia/caffe-img/cafe-Capuchino.jpg"
+    },
+    {
+        "title": "Media lunas",
+        "id": 2,
+        "categoria": "masas",
+        "precio": 354,
+        "thumbnailUrl": "./multimedia/masas-img/masa-1.jpg"
+    },
+    {
+        "title": "Cafe con leche",
+        "id": 3,
+        "categoria": "coffe",
+        "precio": 670,
+        "thumbnailUrl": "./multimedia/caffe-img/Cafe-con-leche.jpg"
+    },
+    {
+        "title": "Pan saborizado",
+        "id": 4,
+        "categoria": "masas",
+        "precio": 543,
+        "thumbnailUrl": "./multimedia/masas-img/masa-2.jpg"
+    },
+    {
+        "title": "Cafe carajillo",
+        "id": 5,
+        "categoria": "coffe",
+        "precio": 450,
+        "thumbnailUrl": "./multimedia/caffe-img/cafe-carajillo.jpg"
+    },
+    {
+        "title": "Galletas saborizadas",
+        "id": 6,
+        "categoria": "masas",
+        "precio": 134,
+        "thumbnailUrl": "./multimedia/masas-img/masa-3.jpg"
+    },
+    {
+        "title": "Cafe largo",
+        "id": 7,
+        "categoria": "coffe",
+        "precio": 590,
+        "thumbnailUrl": "./multimedia/caffe-img/Cafe-largo.jpg"
+    },
+    {
+        "title": "Croissants con mermelada",
+        "id": 8,
+        "categoria": "masas",
+        "precio": 321,
+        "thumbnailUrl": "./multimedia/masas-img/masa-4.jpg"
+    },
+    {
+        "title": "Cafe macchiato",
+        "id": 9,
+        "categoria": "coffe",
+        "precio": 700,
+        "thumbnailUrl": "./multimedia/caffe-img/Café-Americano.jpg"
+    },
+    {
+        "title": "Medialunas con dulce de leche",
+        "id": 10,
+        "categoria": "masas",
+        "precio": 413,
+        "thumbnailUrl": "./multimedia/masas-img/masa-5.jpg"
+    },
+    {
+        "title": "Cafe americano",
+        "id": 11,
+        "categoria": "coffe",
+        "precio": 600,
+        "thumbnailUrl": "./multimedia/caffe-img/cafe-macchiato.jpg"
+    },
+    {
+        "title": "Facturas",
+        "id": 12,
+        "categoria": "masas",
+        "precio": 513,
+        "thumbnailUrl": "./multimedia/masas-img/masa-6.jpg"
+    }
+]

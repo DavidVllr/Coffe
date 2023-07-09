@@ -1,16 +1,17 @@
-// DOM
-const mainCards = document.getElementById('main')
-const carritoLogo = document.querySelector('#carrito')
-const conCartProducts = document.querySelector('.container-cart-products');
-const numeroCarro = document.getElementById('numero-carrito')
-const misBotones = document.querySelectorAll('button.compra-btn')
-const divProduct = document.querySelector('.misProductos')
+const contendorProductos = document.querySelector('#contenedor-productos'),
+      items = document.querySelector('#items'),
+      footer = document.querySelector('#footer-carrito'),
+      carritoLogo = document.getElementById('carrito-id'),
+      containerCartProducts = document.querySelector('.my-5'),
+      finDeLaCompra = document.getElementById('fin-compra')
 
 
-const miCarrito  = []
+function cargarMiCarritoJson(){
+    let miProducCarrito = localStorage.getItem('miCarrito')
+    return miProducCarrito
+}cargarMiCarritoJson()
+let carrito = {}
 let resultado = 0
-
-// eventoClick
-carritoLogo.addEventListener('click', () =>{
-    divProduct.classList.toggle('#elProducto')
+carritoLogo.addEventListener('click', () => {
+    containerCartProducts.classList.toggle('hidden-cart');
 })
